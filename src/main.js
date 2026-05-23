@@ -1,0 +1,13 @@
+import "./js/header";
+import "./js/age1";
+import "./js/number2";
+import "./js/srp3";
+import "./js/calc4";
+import "./js/time5";
+import "./js/dino6";
+import "./js/ball7";
+import "./js/maxn8";
+import "./js/team9";
+import "./js/science10";
+import "./js/modal";
+import "./js/modalf";
