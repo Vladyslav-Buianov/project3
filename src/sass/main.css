@@ -57,6 +57,55 @@ body {
   margin-right: auto;
 }
 
+.number2__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.number2__input {
+  width: 180px;
+  height: 35px;
+  padding: 10px 45px 10px 10px;
+  gap: 10px;
+  border-radius: 20px;
+  background-color: #D7D7D7;
+  box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.23);
+}
+
+.ball7 {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0;
+}
+.ball7__title {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 36px 0;
+}
+.ball7__field {
+  width: 720px;
+  height: 220px;
+  border: 2px solid #000;
+  border-radius: 37px;
+  background-color: #5ABB58;
+  margin-bottom: 36px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.ball7__ball {
+  position: absolute;
+  left: 92px;
+  top: 85px;
+  width: 50px;
+  height: 50px;
+  transition: all 750ms;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
