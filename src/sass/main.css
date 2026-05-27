@@ -57,7 +57,14 @@ body {
   margin-right: auto;
 }
 
-.footer {
+bac .header__box {
   display: flex;
-  justify-content: space-between;
+}
+.header__logo {
+  margin-right: 81px;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+  margin-right: 361px;
 }/*# sourceMappingURL=main.css.map */
