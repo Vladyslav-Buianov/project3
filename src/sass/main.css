@@ -44,9 +44,27 @@ textarea:focus-visible {
   box-shadow: none;
 }
 
+body {
+  background-color: #FFF;
+  font-family: Montserrat Alternates;
+}
+
 .container {
   max-width: 1050px;
   padding: 0 20px;
+  outline: 1px solid red;
   margin-left: auto;
   margin-right: auto;
+}
+
+bac .header__box {
+  display: flex;
+}
+.header__logo {
+  margin-right: 81px;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+  margin-right: 361px;
 }/*# sourceMappingURL=main.css.map */
