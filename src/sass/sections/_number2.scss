@@ -1,0 +1,22 @@
+@use '../base/var' as *;
+
+.number2 {
+
+  &__title {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 36px;
+  }
+
+  &__input{
+    width: 180px;
+    height: 35px;
+    padding: 10px 45px 10px 10px;
+    gap: 10px;
+    border-radius: 20px;
+    background-color: $input-bg-color;
+    box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.23);
+  }
+}
