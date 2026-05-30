@@ -1,8 +1,18 @@
 <section class="number2">
-    <div class="container">
-        <h2 class="number2__title">Вгадай число, яке загадав комп’ютер</h2>
-        <input type="text" class="number2__input" placeholder="Введіть число">
-        <p class="number2__text" id="succes">Вітаю, ви вгадали число! (<span>number</span>)</p>
-        <p class="number2__text" id="fail">Ви програли, комп’ютер загадав (<span>number</span>)</p>
+  <div class="container">
+    <h2 class="number2__title">Вгадай число, яке загадав комп’ютер</h2>
+    <div class="wrapper">
+      <form class="number2__form">
+        <input type="text" name="number" class="number2__input" placeholder="Введіть число" />
+        <button type="submit" class="number2__btn">
+          <svg class="number2__icon">
+            <use href="./img/symbol-defs.svg#lent"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="number2__text" id="succes">Вітаю, ви вгадали число! (<span class="number2__spans">number</span>)</p>
+      <p class="number2__text" id="fail">Ви програли, комп’ютер загадав (<span class="number2__spanf">number</span>)</p>
     </div>
+    <hr class="number2__line">
+  </div>
 </section>
