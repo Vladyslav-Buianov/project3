@@ -73,6 +73,8 @@ body {
 .header__logo {
   margin-right: 81px;
   display: flex;
+  width: 93px;
+  height: 38.1px;
 }
 .header__nav {
   display: flex;
@@ -86,7 +88,6 @@ body {
   color: #000;
   font-size: 16px;
   font-weight: 400;
-  line-height: normal;
 }
 .header__namebox {
   display: flex;
@@ -112,30 +113,24 @@ body {
   top: 0;
   left: 0;
 }
-.header__pic {
-  width: 15px;
-  height: 15px;
-  transform: scale(0.3);
+.header__icon {
+  fill: #000;
 }
 .header__text {
   color: #000;
   text-align: right;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .header__user {
   color: #000;
   text-align: right;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .age {
-  height: 163px;
+  padding: 36px 0px;
 }
 .age__titleone {
   font-weight: 400;
@@ -144,14 +139,9 @@ body {
   text-align: center;
 }
 .age__title {
-  margin-left: auto;
-  margin-right: auto;
-  width: 450px;
   color: #000;
   font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   text-align: center;
 }
 .age__box {
@@ -167,9 +157,7 @@ body {
 .age__input {
   color: #D7D7D7;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   padding: 10px 55px 10px 10px;
   border-radius: 20px;
   background: #D7D7D7;
@@ -188,18 +176,19 @@ body {
   align-items: center;
   justify-content: center;
 }
+.age__icon {
+  fill: #FFF;
+  width: 20px;
+  height: 20px;
+}
 .age__text {
   color: #5d5d5d;
   text-align: right;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .age__line {
   margin-top: 36px;
-  margin-left: auto;
-  margin-right: auto;
   width: 536px;
   height: 1px;
   stroke-width: 1px;
@@ -208,12 +197,20 @@ body {
   justify-content: center;
 }
 
+.number2 {
+  padding: 36px 0;
+}
 .number2__title {
   color: #000;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
   margin-bottom: 36px;
+}
+.number2__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .number2__input {
   width: 180px;
@@ -224,11 +221,46 @@ body {
   background-color: #D7D7D7;
   box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.23);
 }
+.number2__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 0 20px 20px 0;
+  background: #000;
+}
+.number2__icon {
+  fill: #FFF;
+  width: 15px;
+  height: 15px;
+}
+.number2__text {
+  font-size: 12px;
+  font-weight: 400;
+  display: none;
+}
+.number2__text #succes {
+  color: #039900;
+}
+.number2__text #fail {
+  color: #990000;
+}
+.number2__line {
+  width: 536px;
+  height: 1px;
+  color: #000;
+}
 
 .ball7 {
   display: flex;
   justify-content: center;
   padding: 36px 0;
+}
+.ball7__line {
+  width: 536px;
+  height: 1px;
+  color: #000;
 }
 .ball7__title {
   color: #000;
