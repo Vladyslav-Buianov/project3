@@ -19,14 +19,16 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/project3/assets/index-7f8b3757.js"></script>
-    <link rel="stylesheet" href="/project3/assets/index-697ad3dd.css">
+    <script type="module" crossorigin src="/project3/assets/index-29bb0923.js"></script>
+    <link rel="stylesheet" href="/project3/assets/index-958d881f.css">
   </head>
   <body>
     <header class="header">
     <div class="container header__box">
         <div class="header__infbox">
-        <a href="../index.html" class="header__logo"><img src="../img/logo.svg" alt=""></a>
+        <a href="../index.html" class="header__logo"><svg class="header__icon">
+            <use href="/project3/assets/symbol-defs-f2415a5d.svg#icon-logo"></use>
+          </svg></a>
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a href="" class="header__link">Інтерактив</a></li>
@@ -38,7 +40,9 @@
 
         <div class="header__namebox">
         <div class="header__chekbox">
-            <div class="header__chek"><img src="./img/sun.svg" alt="sun" class="header__pic"></div>
+            <div class="header__chek"><svg class="header__icon">
+            <use href="/project3/assets/symbol-defs-f2415a5d.svg#icon-sun"></use>
+          </svg></div>
         </div>
 
         <p class="header__text">Вітаємо,<span class="header__user">User</span>!</p>
@@ -47,22 +51,31 @@
 </header>
 
     <section class="age">
-    <div class="container">
-        <h1 class="age__titleone">Популярні інетрактивні ігри</h1>
-        <hr class="age__line">
-        <h2 class="age__title">Перевір в який рік ти народився</h2>
-        <div class="age__box">
-            <form class="age__form">
-                <input type="text" id="ageInput" placeholder="Введіть рік народження" required class="age__input">
-                <button type="submit" id="ageBtn" class="age__button">
-                    <img src="" alt="loupe" class="age__img">
-                </button>
-            </form>
-            <p class="age__text">Ваш рік високосний чи ні?</p>
-        </div>
-        <hr class="age__line">
+  <div class="container">
+    <h1 class="age__titleone">Популярні інетрактивні ігри</h1>
+    <hr class="age__line" />
+    <h2 class="age__title">Перевір в який рік ти народився</h2>
+    <div class="age__box">
+      <form class="age__form">
+        <input
+          type="text"
+          id="ageInput"
+          placeholder="Введіть рік народження"
+          required
+          class="age__input"
+        />
+        <button type="submit" id="ageBtn" class="age__button">
+          <svg class="age__icon">
+            <use href="/project3/assets/symbol-defs-f2415a5d.svg#icon-lent"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="age__text">Ваш рік високосний чи ні?</p>
     </div>
+    <hr class="age__line" />
+  </div>
 </section>
+
     <section class="number2">
   <div class="container">
     <h2 class="number2__title">Вгадай число, яке загадав комп’ютер</h2>
