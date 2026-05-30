@@ -17,6 +17,8 @@
   &__logo {
     margin-right: 81px;
     display: flex;
+    width: 93px;
+    height: 38.1px;
   }
 
   &__nav {
@@ -33,7 +35,6 @@
     color: $main-color;
     font-size: 16px;
     font-weight: 400;
-    line-height: normal;
   }
 
   &__namebox {
@@ -63,27 +64,21 @@
     left: 0;
   }
 
-  &__pic {
- width: 15px;
-    height: 15px;
-   transform: scale(0.3);
+  &__icon {
+    fill: $main-color;
   }
 
   &__text {
     color: $main-color;
     text-align: right;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
   }
 
   &__user {
     color: $main-color;
     text-align: right;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
   }
 }
