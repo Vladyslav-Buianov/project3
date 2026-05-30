@@ -1,3 +1,5 @@
+@use '../base/var' as *;
+
 .header {
   background-color: $bg-color;
   &__box {
@@ -50,7 +52,7 @@
   &__chek {
     width: 20.5px;
     height: 20px;
-    background-color: $background-color;
+    background-color: $bg-color;
     border-radius: 11px;
     border: 1px solid $main-color;
     display: flex;

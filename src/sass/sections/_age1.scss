@@ -1,5 +1,14 @@
+@use '../base/var' as *;
+
 .age {
   height: 163px;
+
+  &__titleone {
+    font-weight: 400;
+    font-size: 24px;
+    color: $main-color;
+    text-align: center;
+  }
 
   &__title {
     margin-left: auto;
@@ -33,7 +42,7 @@
     line-height: normal;
     padding: 10px 55px 10px 10px;
     border-radius: 20px;
-    background: $second-color;
+    background: $input-bg-color;
     box-shadow: 5px 4px #adadad;
   }
 
