@@ -1,6 +1,7 @@
 @use '../base/var' as *;
 
 .number2 {
+  padding: 36px 0;
 
   &__title {
     color: $main-color;
@@ -8,6 +9,12 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: 36px;
+  }
+
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__input{
@@ -18,5 +25,41 @@
     border-radius: 20px;
     background-color: $input-bg-color;
     box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.23);
+  }
+
+  &__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 0 20px 20px 0;
+    background: $main-color;
+  }
+
+  &__icon{
+    fill: $bg-color;
+    width: 15.0px;
+    height: 15.0px;
+  }
+
+  &__text{
+    font-size: 12px;
+    font-weight: 400;
+    display: none;
+  }
+
+  &__text #succes{
+    color: $succes-color;
+  }
+    
+  &__text #fail{
+    color: $fail-color;
+  }
+
+  &__line{
+    width: 536px;
+    height: 1px;
+    color: $main-color;
   }
 }
