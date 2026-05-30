@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/project3/assets/index-20112b26.js"></script>
+    <script type="module" crossorigin src="/project3/assets/index-7f8b3757.js"></script>
     <link rel="stylesheet" href="/project3/assets/index-697ad3dd.css">
   </head>
   <body>
@@ -64,12 +64,22 @@
     </div>
 </section>
     <section class="number2">
-    <div class="container">
-        <h2 class="number2__title">Вгадай число, яке загадав комп’ютер</h2>
-        <input type="text" class="number2__input" placeholder="Введіть число">
-        <p class="number2__text" id="succes">Вітаю, ви вгадали число! (<span>number</span>)</p>
-        <p class="number2__text" id="fail">Ви програли, комп’ютер загадав (<span>number</span>)</p>
+  <div class="container">
+    <h2 class="number2__title">Вгадай число, яке загадав комп’ютер</h2>
+    <div class="wrapper">
+      <form class="number2__form">
+        <input type="text" name="number" class="number2__input" placeholder="Введіть число" />
+        <button type="submit" class="number2__btn">
+          <svg class="number2__icon">
+            <use href="/project3/assets/symbol-defs-f2415a5d.svg#lent"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="number2__text" id="succes">Вітаю, ви вгадали число! (<span class="number2__spans">number</span>)</p>
+      <p class="number2__text" id="fail">Ви програли, комп’ютер загадав (<span class="number2__spanf">number</span>)</p>
     </div>
+    <hr class="number2__line">
+  </div>
 </section>
     
     
@@ -77,10 +87,12 @@
     
     <section class="ball7">
     <div class="container">
+        <hr class="ball7__line">
         <h2 class="ball7__title">Футбол</h2>
         <div class="ball7__field">
             <img src="../img/ball.webp" class="ball7__ball"> 
         </div>
+        <hr class="ball7__line">
     </div>
 </section>
     
