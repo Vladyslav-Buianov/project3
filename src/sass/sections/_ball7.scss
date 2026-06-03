@@ -1,8 +1,6 @@
 @use '../base/var' as *;
 
 .ball7 {
-  display: flex;
-  justify-content: center;
   padding: 36px 0;
 
   &__line{
@@ -24,7 +22,7 @@
     border: 2px solid $main-color;
     border-radius: 37px;
     background-color: $field-bg-color;
-    margin-bottom: 36px;
+    margin: 0 auto 36px;
     position: relative;
     overflow: hidden;
     cursor: pointer;

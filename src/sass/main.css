@@ -212,7 +212,7 @@ body {
 }
 
 .number2 {
-  padding: 36px 0;
+  padding: 0 0 36px;
 }
 .number2__title {
   color: #000;
@@ -223,17 +223,21 @@ body {
 }
 .number2__wrapper {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: baseline;
+  justify-content: center;
+  gap: 202px;
+}
+.number2__form {
+  position: relative;
 }
 .number2__input {
   width: 180px;
   height: 35px;
   padding: 10px 45px 10px 10px;
-  gap: 10px;
   border-radius: 20px;
   background-color: #D7D7D7;
-  box-shadow: 3px 4px 0px 0px rgba(0, 0, 0, 0.23);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+  margin-bottom: 36px;
 }
 .number2__btn {
   display: flex;
@@ -242,7 +246,10 @@ body {
   padding: 10px;
   gap: 10px;
   border-radius: 0 20px 20px 0;
-  background: #000;
+  background-color: #000;
+  position: absolute;
+  top: 0px;
+  left: 145px;
 }
 .number2__icon {
   fill: #FFF;
@@ -252,13 +259,6 @@ body {
 .number2__text {
   font-size: 12px;
   font-weight: 400;
-  display: none;
-}
-.number2__text #succes {
-  color: #039900;
-}
-.number2__text #fail {
-  color: #990000;
 }
 .number2__line {
   width: 536px;
@@ -666,7 +666,32 @@ body {
 
 .ball7 {
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 0 20px 20px 0;
+  background-color: #000;
+  position: absolute;
+  top: 0px;
+  left: 145px;
+}
+.time5__icon {
+  fill: #FFF;
+  width: 15px;
+  height: 15px;
+}
+.time5__img {
+  width: 100px;
+  height: 1px;
+}
+.time5__text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.ball7 {
   padding: 36px 0;
 }
 .ball7__line {
@@ -687,7 +712,7 @@ body {
   border: 2px solid #000;
   border-radius: 37px;
   background-color: #5ABB58;
-  margin-bottom: 36px;
+  margin: 0 auto 36px;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -699,6 +724,100 @@ body {
   width: 50px;
   height: 50px;
   transition: all 750ms;
+}
+
+.science10 {
+  padding: 36px 0;
+}
+.science10__line {
+  width: 536px;
+  height: 1px;
+  color: #000;
+  margin-bottom: 36px;
+}
+.science10__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.science10__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 577px;
+  gap: 59px;
+  row-gap: 36px;
+  margin: 36px auto;
+}
+.science10__item {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 170%;
+}
+.science10__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 20px;
+  max-width: 858px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+}
+.science10__box :first-child {
+  width: 227px;
+}
+.science10__box :nth-child(2) {
+  width: 298px;
+}
+.science10__box :nth-child(3) {
+  width: 282px;
+}
+.science10__box :nth-child(4) {
+  width: 441px;
+}
+.science10__box :nth-child(5) {
+  width: 380px;
+}
+.science10__box :nth-child(6) {
+  width: 380px;
+}
+.science10__box :nth-child(7) {
+  width: 329px;
+}
+.science10__box :nth-child(8) {
+  width: 368px;
+}
+.science10__box :nth-child(9) {
+  width: 489px;
+}
+.science10__btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #000;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+}
+.science10__btn:nth-child(odd) {
+  justify-self: end;
+}
+.science10__btn:nth-child(even) {
+  justify-self: start;
+}
+.science10__btn:last-child:nth-child(odd) {
+  grid-column: 1/span 2;
+  justify-self: center;
 }
 
 .footer {
