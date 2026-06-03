@@ -19,8 +19,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/project3/assets/index-29bb0923.js"></script>
-    <link rel="stylesheet" href="/project3/assets/index-958d881f.css">
+    <script type="module" crossorigin src="/project3/assets/index-ae6e0253.js"></script>
+    <link rel="stylesheet" href="/project3/assets/index-7b758480.css">
   </head>
   <body>
     <header class="header">
@@ -79,24 +79,42 @@
     <section class="number2">
   <div class="container">
     <h2 class="number2__title">Вгадай число, яке загадав комп’ютер</h2>
-    <div class="wrapper">
+    <div class="number2__wrapper">
       <form class="number2__form">
-        <input type="text" name="number" class="number2__input" placeholder="Введіть число" />
+        <input type="text" required name="number" class="number2__input" placeholder="Введіть число" />
         <button type="submit" class="number2__btn">
           <svg class="number2__icon">
-            <use href="/project3/assets/symbol-defs-f2415a5d.svg#lent"></use>
+            <use href="/project3/assets/symbol-defs-f2415a5d.svg#icon-lent"></use>
           </svg>
         </button>
       </form>
-      <p class="number2__text" id="succes">Вітаю, ви вгадали число! (<span class="number2__spans">number</span>)</p>
-      <p class="number2__text" id="fail">Ви програли, комп’ютер загадав (<span class="number2__spanf">number</span>)</p>
+      <p class="number2__text">Зможете вгадати номер від 1 до 10 (<span class="number2__span">number</span>) ?</p>
     </div>
     <hr class="number2__line">
   </div>
 </section>
     
     
-    
+    <section class="time5">
+  <div class="container">
+    <hr class="time5__line" />
+    <h2 class="time5__title">Калькулятор часу</h2>
+    <div class="time5__wrapper">
+      <form class="time5__form">
+        <input type="text" name="time" required placeholder="Введіть число" class="time5__input"/>
+        <button class="time5__btn">
+          <svg class="time5__icon">
+            <use href="/project3/assets/symbol-defs-f2415a5d.svg#icon-lent"></use>
+          </svg>
+        </button>
+      </form>
+      <img class="time5__img" src="data:image/webp;base64,UklGRmIAAABXRUJQVlA4WAoAAAAQAAAAYwAAAAAAQUxQSBMAAAABDzD/ERFCSJBk/icPuyGi/9kCAFZQOCAoAAAAEAMAnQEqZAABAD6RSJ9LpaQioaSIALASCWkAACMPvCsAAP74zuwAAA==" alt="line made out of dots"/>
+      <p class="time5__text">Тут буде видно переведений час</p>
+    </div>
+    <hr class="time5__line" />
+  </div>
+</section>
+
     
     <section class="ball7">
     <div class="container">
@@ -110,7 +128,24 @@
 </section>
     
     
-    
+    <section class="science10">
+    <div class="container">
+        <hr class="science10__line">
+        <h2 class="science10__title">Обери вченого/их</h2>
+        <ul class="science10__list"></ul>
+        <div class="science10__box">
+            <button class="science10__btn" data-action="19st" type="button">Які вчені народилися в 19 ст.</button>
+            <button class="science10__btn" data-action="Einstein" type="button">Знайти рік народження Albert Einshtein</button>
+            <button class="science10__btn" data-action="alphabet" type="button">Відсортувати вчених за алфавітом</button>
+            <button class="science10__btn" data-action="cSurname" type="button">Знайти вчених, прізвища яких починаються на на літеру “С” </button>
+            <button class="science10__btn" data-action="livedMost" type="button">Відсортувати вчених за кількістю прожитих років</button>
+            <button class="science10__btn" data-action="namesWithoutA" type="button">Видалити всіх вчених, ім’я яких починається на “А”</button>
+            <button class="science10__btn" data-action="scientistBornLast" type="button">Знайти вченого, який народився найпізніше</button>
+            <button class="science10__btn" data-action="youngest&oldest" type="button">Знайти вченого, який прожив найдовше і вченого, який прожив найменше</button>
+            <button class="science10__btn" data-action="fistLetterSame" type="button">1. Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+        </div>
+    </div>
+</section>
     <section class="footer">
     <a href="" class="footer__logo">
         <picture>
