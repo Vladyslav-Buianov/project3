@@ -1,22 +1,18 @@
 const formRef = document.querySelector(".number2__form");
-const succesSpanRef = document.querySelector(".number2__spans");
-const failSpanRef = document.querySelector(".number2__spanf");
-const succesInputRef = document.querySelector("#succes");
-const failInputRef = document.querySelector("#fail");
+const textRef = document.querySelector(".number2__text");
+const spanRef = document.querySelector(".number2__span");
 
 formRef.addEventListener("submit", (event)=>{
     event.preventDefault()
     const action = Number(event.currentTarget.elements[0].value);
     const randomNumber = Math.round(Math.random() * (10 - 1) + 1);
-    if(action != "" && !Number.isNaN(action)){
+    if(!Number.isNaN(action) && Number(action) < 10 && Number(action) > 0){
         if (action === randomNumber) {
-            succesSpanRef.textContent = randomNumber;
-            succesInputRef.display = inline;
-            failInputRef.display = none;
+            textRef.textContent = `Вітаю, ви вгадали число! (${spanRef.textContent = randomNumber})`;
+            textRef.style.color = "#039900";
         } else {
-            failSpanRef.textContent = randomNumber;
-            failInputRef.display = inline;
-            succesInputRef.display = none;
+            textRef.textContent = `Ви програли, комп’ютер загадав (${spanRef.textContent = randomNumber})`;
+            textRef.style.color = "#990000";
         }
     }
 })
