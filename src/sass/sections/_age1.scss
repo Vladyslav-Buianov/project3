@@ -15,6 +15,7 @@
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+    margin-top: 36px;
   }
 
   &__box {
@@ -26,12 +27,14 @@
   }
 
   &__form {
-    position: relative;
+    position: relative; 
+    align-items: center;
   }
 
   &__input {
-    color: $input-bg-color;
-    font-size: 16px;
+    color: $main-color;
+    height: 36px;
+    font-size: 12px;
     font-weight: 400;
     padding: 10px 55px 10px 10px;
     border-radius: 20px;
@@ -43,8 +46,6 @@
     top: 1px;
     right: 0px;
     position: absolute;
-    width: 38px;
-    height: 39px;
     padding: 10px;
     border-radius: 0 20px 20px 0;
     background: $main-color;
@@ -53,10 +54,10 @@
     justify-content: center;
   }
 
-  &__icon{
+  &__icon {
     fill: $bg-color;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
   }
 
   &__text {
@@ -71,8 +72,16 @@
     width: 536px;
     height: 1px;
     stroke-width: 1px;
+    border: none;
     background-color: $main-color;
     display: flex;
     justify-content: center;
+  }
+  &true {
+    color: #039900;
+  }
+
+  &false {
+    color: #900;
   }
 }
