@@ -1,0 +1,87 @@
+@use '../base/var' as *;
+
+.age {
+  padding: 36px 0px;
+
+  &__titleone {
+    font-weight: 400;
+    font-size: 24px;
+    color: $main-color;
+    text-align: center;
+  }
+
+  &__title {
+    color: $main-color;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 36px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 169px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+  }
+
+  &__form {
+    position: relative; 
+    align-items: center;
+  }
+
+  &__input {
+    color: $main-color;
+    height: 36px;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px 55px 10px 10px;
+    border-radius: 20px;
+    background: $input-bg-color;
+    box-shadow: 5px 4px #adadad;
+  }
+
+  &__button {
+    top: 1px;
+    right: 0px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    background: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    fill: $bg-color;
+    width: 15px;
+    height: 15px;
+  }
+
+  &__text {
+    color: #5d5d5d;
+    text-align: right;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__line {
+    margin-top: 36px;
+    width: 536px;
+    height: 1px;
+    stroke-width: 1px;
+    border: none;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+  }
+  &true {
+    color: #039900;
+  }
+
+  &false {
+    color: #900;
+  }
+}

@@ -1,0 +1,39 @@
+@use '../base/var' as *;
+
+.ball7 {
+  padding: 36px 0;
+
+  &__line{
+    width: 536px;
+    height: 1px;
+    color: $main-color;
+  }
+
+  &__title {
+    color: $main-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 36px 0;
+  }
+  &__field {
+    width: 720px;
+    height: 220px;
+    border: 2px solid $main-color;
+    border-radius: 37px;
+    background-color: $field-bg-color;
+    margin: 0 auto 36px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__ball {
+    position: absolute;
+    left: 92px;
+    top: 85px;
+    width: 50px;
+    height: 50px;
+    transition: all 750ms;
+  }
+}
