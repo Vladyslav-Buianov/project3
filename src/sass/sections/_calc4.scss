@@ -1,0 +1,65 @@
+@use '../base/var' as *;
+
+.calc {
+  padding: 36px 0;
+
+  &__contbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__line {
+    width: 536px;
+    height: 1px;
+    color: $main-color;
+  }
+
+  &__box {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 36px;
+  }
+  &__listop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 62px;
+    gap: 10px;
+  }
+
+  &__btn {
+    padding: 5px 10px;
+    color: $bg-color;
+    background-color: $main-color;
+    font-size: 12px;
+    border-radius: 20px;
+  }
+
+  &__input {
+    background-color: $input-bg-color;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-align: center;
+
+    &::placeholder {
+      color: black;
+    }
+  }
+
+  &__text {
+    background-color: $input-bg-color;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
+

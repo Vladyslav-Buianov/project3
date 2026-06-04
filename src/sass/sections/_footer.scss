@@ -1,5 +1,45 @@
-.footer{
-
+@use '../base/var' as *;
+.footer {
+  &__box {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 81px;
+    display: flex;
+    width: 93px;
+    height: 38.1px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  &__input {
+    padding: 10px 80px 10px 10px;
+    background-color: $input-bg-color;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  &__btn {
+    padding: 10px;
+    background-color: $main-color;
+    font-size: 12px;
+    border-radius: 20px;
+    color: $bg-color;
+  }
+
+  &__form {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__description {
+    font-size: 6px;
+    margin-top: 18px;
+  }
 }
