@@ -1,41 +1,39 @@
-const btnaddRef = document.querySelector('#btnadd')
-const btnmultiplyRef = document.querySelector('#btnmultiply')
-const btnsubstractref = document.querySelector('#btnsubstract')
-const btndivideRef = document.querySelector('#btndivide')
+const backdropRef = document.querySelector(".backdrop__modal");
+const closeBtnRef = document.querySelector(".modal__closer");
+const formRef = document.querySelector(".modal__form");
+const spanRef = document.querySelector(".header__user");
 
-const firstnumberRef = document.querySelector('#firstnumber')
-const secondnumberRef = document.querySelector('#secondnumber')
-
-const resultRef = document.querySelector('#result')
-
-
-function getNumbers() {
-    return {
-        num1: Number(firstnumberRef.value),
-        num2: Number(secondnumberRef.value)
-    };
+function openModal() {
+    backdropRef.style.display = "flex";
+    window.addEventListener("keydown", onEscCloseModal);
 }
 
-btnaddRef.addEventListener('click', () => {
-    const { num1, num2 } = getNumbers();
-    resultRef.textContent = `Результат: ${num1 + num2}`;
+function closeModal() {
+    backdropRef.style.display = "none";
+    window.removeEventListener("keydown", onEscCloseModal)
+}
+
+
+closeBtnRef.addEventListener("click", ()=> {
+    closeModal();
 });
 
-btnsubstractref.addEventListener('click', () => {
-    const { num1, num2 } = getNumbers();
-    resultRef.textContent = `Результат: ${num1 - num2}`;
-});
-
-btnmultiplyRef.addEventListener('click', () => {
-    const { num1, num2 } = getNumbers();
-    resultRef.textContent = `Результат: ${num1 * num2}`;
-});
-
-btndivideRef.addEventListener('click', () => {
-    const { num1, num2 } = getNumbers();
-    if (num2 === 0) {
-        resultRef.textContent = 'Помилка: ділення на нуль!';
-        return;
+backdropRef.addEventListener("click", (evt)=> {
+    if (evt.target === evt.currentTarget) {
+        closeModal();
     }
-    resultRef.textContent = `Результат: ${num1 / num2}`;
+    window.removeEventListener("keydown", ()=>{})
 });
+
+formRef.addEventListener("submit", (evt)=> {
+    evt.preventDefault();
+    const name = evt.currentTarget.elements[0].value;
+    spanRef.textContent = name;
+    closeModal();
+});
+
+function onEscCloseModal(evt){
+    if (evt.key === "Escape") {
+        closeModal();
+    }
+}
