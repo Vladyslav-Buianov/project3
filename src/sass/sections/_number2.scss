@@ -23,13 +23,15 @@
   }
 
   &__input{
-    width: 180px;
+    width: 150px;
     height: 35px;
     padding: 10px 45px 10px 10px;
     border-radius: 20px;
     background-color: $input-bg-color;
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 3px 0 $transparent-bg;
     margin-bottom: 36px;
+    font-size: 12px;
+    font-weight: 400;
   }
 
   &__btn{
@@ -42,7 +44,7 @@
     background-color: $main-color;
     position: absolute;
     top: 0px;
-    left: 145px;
+    left: 115px;
   }
 
   &__icon{
@@ -59,6 +61,9 @@
   &__line{
     width: 536px;
     height: 1px;
-    color: $main-color;
+    stroke-width: 1px;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
   }
 }
