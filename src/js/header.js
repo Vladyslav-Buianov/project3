@@ -1,5 +1,4 @@
-import sun from '../img/symbol-defs.svg#icon-sun'
-import moon from '../img/symbol-defs.svg#icon-moon'
+import svg from '../img/symbol-defs.svg';
 
 const toggleRef = document.querySelector('.header__chekbox');
 const svgIcon = document.querySelector('.header__chek svg use');
@@ -14,9 +13,7 @@ const header = document.querySelector('.header');
 const btnRef = document.querySelectorAll('btn');
 const lineRef = document.querySelector('hr');
 
-
-
-toggleRef.addEventListener('click', (e) => {
+toggleRef.addEventListener('click', e => {
   const isDark = document.body.classList.toggle('dark');
 
   // toggle animation switch
@@ -29,22 +26,19 @@ toggleRef.addEventListener('click', (e) => {
   // text colors
   const color = isDark ? '#fff' : '#000';
 
-  allTextRef.forEach(el => el.style.color = color);
+  allTextRef.forEach(el => (el.style.color = color));
   if (mainText) mainText.style.color = color;
-  linkRef.forEach(el => el.style.color = color);
-  pTextRef.forEach(el => el.style.color = color);
-  spanText.forEach(el => el.style.color = color);
+  linkRef.forEach(el => (el.style.color = color));
+  pTextRef.forEach(el => (el.style.color = color));
+  spanText.forEach(el => (el.style.color = color));
 
   // containers
   containerRef.forEach(el => {
     el.style.backgroundColor = isDark ? '#444' : '#fff';
   });
 
-  // icon swap
   svgIcon.setAttribute(
     'href',
-    isDark
-      ? './img/symbol-defs.svg#icon-moon'
-      : './img/symbol-defs.svg#icon-sun'
+    isDark ? `${svg}#icon-moon` : `${svg}#icon-sun`
   );
 });
