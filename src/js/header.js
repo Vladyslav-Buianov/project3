@@ -44,7 +44,7 @@ toggleRef.addEventListener('click', (e) => {
   svgIcon.setAttribute(
     'href',
     isDark
-      ? '/img/symbol-defs.svg#icon-moon'
-      : '/img/symbol-defs.svg#icon-sun'
+      ? './img/symbol-defs.svg#icon-moon'
+      : './img/symbol-defs.svg#icon-sun'
   );
 });
