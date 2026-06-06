@@ -270,6 +270,7 @@ body {
   width: 536px;
   height: 1px;
   stroke-width: 1px;
+  border: none;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -396,6 +397,7 @@ body {
   width: 536px;
   height: 1px;
   stroke-width: 1px;
+  border: none;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -574,12 +576,13 @@ body {
 }
 
 .ball7 {
-  padding: 36px 0;
+  padding: 36px 0 0;
 }
 .ball7__line {
   width: 536px;
   height: 1px;
   stroke-width: 1px;
+  border: none;
   background-color: #000;
   display: flex;
   justify-content: center;
@@ -654,10 +657,10 @@ body {
   width: 536px;
   height: 1px;
   stroke-width: 1px;
+  border: none;
   background-color: #000;
   display: flex;
   justify-content: center;
-  margin-bottom: 36px;
 }
 .science10__title {
   color: #000;
