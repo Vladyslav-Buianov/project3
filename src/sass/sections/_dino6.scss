@@ -1,1 +1,137 @@
 @use '../base/var' as *;
+
+.dino {
+  padding-top: 36px;
+  user-select: none; // Забороняє випадкове виділення картинок
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &::after {
+      content: '';
+      height: 1px;
+      width: 536px;
+      background-color: $main-color;
+      margin-top: 36px;
+    }
+  }
+
+  &__title {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__game {
+    background-image: url(/img/trex-bg.png);
+    background-repeat: repeat-x; // Тільки по горизонталі
+    background-size: auto 12px;
+    background-position: bottom;
+    width: 720px;
+    height: 241px;
+    margin: auto;
+    position: relative;
+    border-bottom: 2px solid $main-color; // Земля, якщо немає картинки текстури
+    overflow: hidden; // Щоб кактус не вилазив за межі карти гри
+  }
+
+  &__sprite {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  &__cactus {
+    display: none;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 160px; // Опущено нижче відповідно до ніг динозавра
+    left: 720px;
+    z-index: 2;
+  }
+
+  &__btn {
+    border-radius: 20px;
+    background-color: $main-color;
+    padding: 10px 20px;
+    color: $bg-color;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center;
+    margin-top: 36px;
+    transition: transform 0.1s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  // Елементи рахунку
+  &__score-box {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    gap: 15px;
+    font-family: 'Press Start 2P', monospace, sans-serif;
+    font-size: 14px;
+    color: $input-bg-color;
+  }
+
+  // Екран Game Over всередині поля
+  &__game-over {
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', monospace, sans-serif;
+    font-size: 20px;
+    color: $main-color;
+    letter-spacing: 4px;
+    z-index: 10;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  // Анімація руху перешкоди
+  @keyframes block {
+    0% {
+      left: 720px;
+    }
+    100% {
+      left: -40px;
+    }
+  }
+
+  // Реалістична анімація стрибка (плавний зліт і приземлення)
+  @keyframes jumpAnimation {
+    0% {
+      top: 150px;
+    }
+    45% {
+      top: 60px;
+    } // Максимальна висота
+    55% {
+      top: 60px;
+    } // Зависання
+    100% {
+      top: 150px;
+    } // Повернення
+  }
+}
+
+// Клас, що тригерує стрибок у JS
+.jump {
+  // cubic-bezier робить стрибок фізично правильним (уповільнення вгорі)
+  animation: jumpAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
