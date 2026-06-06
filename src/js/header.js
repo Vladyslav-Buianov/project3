@@ -8,6 +8,10 @@ const linkRef = document.querySelectorAll('a');
 const pTextRef = document.querySelectorAll('p');
 const spanText = document.querySelectorAll('span');
 const header = document.querySelector('.header');
+const btnRef = document.querySelectorAll('btn');
+const lineRef = document.querySelector('hr');
+
+
 
 toggleRef.addEventListener('click', (e) => {
   const isDark = document.body.classList.toggle('dark');
@@ -37,7 +41,7 @@ toggleRef.addEventListener('click', (e) => {
   svgIcon.setAttribute(
     'href',
     isDark
-      ? './img/symbol-defs.svg#icon-moon'
-      : './img/symbol-defs.svg#icon-sun'
+      ? '/img/symbol-defs.svg#icon-moon'
+      : '/img/symbol-defs.svg#icon-sun'
   );
 });
