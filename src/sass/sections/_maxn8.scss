@@ -1,6 +1,6 @@
 @use '../base/var' as *;
 .maxnum{
-  padding: 36px 0;
+  padding: 36px 0 0;
 
   &__box{
     display: flex;
@@ -33,7 +33,6 @@
     }
   }
   &__text{
-    margin-bottom: 36px;
     font-size: 12px;
   }
 }

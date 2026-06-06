@@ -177,7 +177,7 @@ body {
   box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.25);
 }
 .age__button {
-  top: 1px;
+  top: 0px;
   right: 0px;
   position: absolute;
   padding: 10px;
@@ -202,11 +202,8 @@ body {
   margin-top: 36px;
   width: 536px;
   height: 1px;
-  stroke-width: 1px;
   border: none;
   background-color: #000;
-  display: flex;
-  justify-content: center;
 }
 .agetrue {
   color: #039900;
@@ -269,16 +266,10 @@ body {
 .number2__line {
   width: 536px;
   height: 1px;
-  stroke-width: 1px;
   border: none;
   background-color: #000;
-  display: flex;
-  justify-content: center;
 }
 
-.srp3 {
-  padding: 36px 0;
-}
 .srp3__contbox {
   display: flex;
   flex-direction: column;
@@ -287,7 +278,8 @@ body {
 .srp3__line {
   width: 536px;
   height: 1px;
-  color: #000;
+  border: none;
+  background-color: #000;
 }
 .srp3__box {
   display: flex;
@@ -326,6 +318,7 @@ body {
   border-radius: 20px;
   padding: 10px 20px;
   font-size: 12px;
+  margin-bottom: 36px;
 }
 
 .container {
@@ -615,7 +608,7 @@ body {
 }
 
 .maxnum {
-  padding: 36px 0;
+  padding: 36px 0 0;
 }
 .maxnum__box {
   display: flex;
@@ -646,7 +639,6 @@ body {
   color: black;
 }
 .maxnum__text {
-  margin-bottom: 36px;
   font-size: 12px;
 }
 
