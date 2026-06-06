@@ -1,0 +1,81 @@
+@use '../base/var' as *;
+
+.backdrop__modalf {
+  background-color: $transparent-bg;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  display: none;
+}
+
+.modalf {
+  background-color: $bg-color;
+  padding: 83px 138px 138px;
+  width: 462px;
+  height: 245px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  position: relative;
+
+  &__closer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  &__close{
+    width: 15px;
+    height: 15px;
+    fill: $main-color;
+  }
+
+  &__title{
+    color: $main-color;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  &__icon{
+    width: 30px;
+    height: 30px;
+    fill: $main-color;
+  }
+
+  &__icon#One{
+    position: absolute;
+    left: 42px;
+    bottom: 146px;
+  }
+
+  &__icon#Two{
+    position: absolute;
+    left: 86px;
+    bottom: 70px;
+  }
+
+  &__icon#Three{
+    position: absolute;
+    right: 42px;
+    bottom: 146px;
+  }
+
+  &__icon#Four{
+    position: absolute;
+    right: 86px;
+    bottom: 70px;
+  }
+}
