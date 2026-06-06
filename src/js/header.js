@@ -1,5 +1,5 @@
-import sun from './img/symbol-defs.svg#icon-sun'
-import moon from './img/symbol-defs.svg#icon-moon'
+import sun from '../img/symbol-defs.svg#icon-sun'
+import moon from '../img/symbol-defs.svg#icon-moon'
 
 const toggleRef = document.querySelector('.header__chekbox');
 const svgIcon = document.querySelector('.header__chek svg use');
