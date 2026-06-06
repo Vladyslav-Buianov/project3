@@ -44,7 +44,7 @@
   }
 
   &__button {
-    top: 1px;
+    top: 0px;
     right: 0px;
     position: absolute;
     padding: 10px;
@@ -72,11 +72,8 @@
     margin-top: 36px;
     width: 536px;
     height: 1px;
-    stroke-width: 1px;
     border: none;
     background-color: $main-color;
-    display: flex;
-    justify-content: center;
   }
   
   &true {

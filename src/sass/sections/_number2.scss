@@ -11,18 +11,18 @@
     margin-bottom: 36px;
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     align-items: baseline;
     justify-content: center;
     gap: 202px;
   }
 
-  &__form{
+  &__form {
     position: relative;
   }
 
-  &__input{
+  &__input {
     width: 150px;
     height: 35px;
     padding: 10px 45px 10px 10px;
@@ -34,7 +34,7 @@
     font-weight: 400;
   }
 
-  &__btn{
+  &__btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,24 +47,21 @@
     left: 115px;
   }
 
-  &__icon{
+  &__icon {
     fill: $bg-color;
     width: 15px;
     height: 15px;
   }
 
-  &__text{
+  &__text {
     font-size: 12px;
     font-weight: 400;
   }
 
-  &__line{
+  &__line {
     width: 536px;
     height: 1px;
-    stroke-width: 1px;
     border: none;
     background-color: $main-color;
-    display: flex;
-    justify-content: center;
   }
 }

@@ -1,69 +1,67 @@
 @use '../base/var' as *;
-.srp3{
-    padding: 36px 0;
+.srp3 {
+  //   border-top: 1px solid black;
 
-    //   border-top: 1px solid black;
-
-    &__contbox{
+  &__contbox {
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
+  }
 
-
-    &__line {
+  &__line {
     width: 536px;
     height: 1px;
-    color: $main-color;
-    }
-    
-    &__box{
-        display: flex;
-        justify-content: right;
-        gap: 108px;
-        margin-top: 36px;
-        margin-bottom: 36px;
-        align-items: center;
-    }
+    border: none;
+    background-color: $main-color;
+  }
 
-    &__btn{
-        background-color: $main-color;
-        padding: 10px;
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
+  &__box {
+    display: flex;
+    justify-content: right;
+    gap: 108px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    align-items: center;
+  }
 
-    }
+  &__btn {
+    background-color: $main-color;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+  }
 
-    &__list{
-        display: flex;
-        gap: 38px;
-    }
+  &__list {
+    display: flex;
+    gap: 38px;
+  }
 
-    &__title{
-        font-size: 16px;
-        font-weight: 400;
-    }
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+  }
 
-    &__text{
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 1.7;
-    }
+  &__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.7;
+  }
 
-    &__message{
-        margin-bottom: 36px;
-    }
+  &__message {
+    margin-bottom: 36px;
+  }
 
-    &__comp{
-        color: $bg-color;
-        background-color: $main-color;
-        border-radius: 20px;
-        padding: 10px 20px;
-        font-size: 12px;
-    }
+  &__comp {
+    color: $bg-color;
+    background-color: $main-color;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 12px;
+    margin-bottom: 36px;
+  }
 }
 
-    .container {
-        width: 100%;
-    }
+.container {
+  width: 100%;
+}
