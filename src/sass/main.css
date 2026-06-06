@@ -628,6 +628,38 @@ body {
 .footer__box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footer__logo {
+  margin-right: 81px;
+  display: flex;
+  width: 93px;
+  height: 38.1px;
+}
+.footer__text {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.footer__input {
+  padding: 10px 80px 10px 10px;
+  background-color: #D7D7D7;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.footer__btn {
+  padding: 10px;
+  background-color: #000;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #FFF;
+}
+.footer__form {
+  display: flex;
+  gap: 36px;
+}
+.footer__description {
+  font-size: 6px;
+  margin-top: 18px;
 }
 
 .backdrop__modal {
