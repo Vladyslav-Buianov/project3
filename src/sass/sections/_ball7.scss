@@ -1,12 +1,13 @@
 @use '../base/var' as *;
 
 .ball7 {
-  padding: 36px 0;
+  padding: 36px 0 0;
 
   &__line{
     width: 536px;
     height: 1px;
     stroke-width: 1px;
+    border: none;
     background-color: $main-color;
     display: flex;
     justify-content: center;
