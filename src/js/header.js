@@ -31,8 +31,7 @@ toggleRef.addEventListener('click', e => {
   
   // ВИПРАВЛЕНО: 
   // Якщо темна тема (isDark) -> білий колір '#fff' (щоб усе було видно на фоні #444)
-  // Якщо світла тема -> оригінальний сірий колір '#535353'
-  const fill = isDark ? '#ffffff' : '#535353'; 
+
 
   allTextRef.forEach(el => (el.style.color = color));
   if (mainText) mainText.style.color = color;
@@ -45,12 +44,12 @@ toggleRef.addEventListener('click', e => {
     el.style.backgroundColor = isDark ? '#444' : '#fff';
   });
 
-  // dino & cactus тепер чітко видно в обох темах
+  const fill = isDark ? '#ffffff' : '#535353';
+  // ... решта вашого коду перемикання ...
   dinoRef.style.fill = fill;
   cactusRef.style.fill = fill;
-  
-  // ВИПРАВЛЕНО: Зміна кольору лінії через border-top-color, щоб вона не зникала
-  if (lineRef) lineRef.style.borderTopColor = fill;
+
+ groundRef.style.backgroundColor = fill;
 
   
   svgIcon.setAttribute(
