@@ -2,21 +2,13 @@
 
 .dino {
   padding-top: 36px;
-  user-select: none; // Забороняє випадкове виділення картинок
+  user-select: none;
 
   &__box {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
-    &::after {
-      content: '';
-      height: 1px;
-      width: 536px;
-      background-color: $main-color;
-      margin-top: 36px;
-    }
   }
 
     
@@ -40,13 +32,14 @@
 
   &__game {
     background-image: url(/img/trex-bg.png);
-    background-repeat: repeat-x; // Тільки по горизонталі
+    background-repeat: repeat-x;
     background-size: auto 12px;
     background-position: bottom;
     width: 720px;
     height: 241px;
     margin: auto;
     position: relative;
+    border-bottom: 2px solid $main-color;
     overflow: hidden;
   }
 
@@ -66,7 +59,7 @@
     width: 20px;
     height: 40px;
     position: absolute;
-    top: 165px; // Опущено нижче відповідно до ніг динозавра
+    top: 160px;
     left: 720px;
     z-index: 2;
   }
@@ -87,7 +80,6 @@
     }
   }
 
-  // Елементи рахунку
   &__score-box {
     position: absolute;
     right: 20px;
@@ -99,7 +91,6 @@
     color: $input-bg-color;
   }
 
-  // Екран Game Over всередині поля
   &__game-over {
     display: none;
     position: absolute;
@@ -117,7 +108,6 @@
     }
   }
 
-  // Анімація руху перешкоди
   @keyframes block {
     0% {
       left: 720px;
@@ -127,25 +117,29 @@
     }
   }
 
-  // Реалістична анімація стрибка (плавний зліт і приземлення)
   @keyframes jumpAnimation {
     0% {
       top: 150px;
     }
     45% {
       top: 60px;
-    } // Максимальна висота
+    }
     55% {
       top: 60px;
-    } // Зависання
+    }
     100% {
       top: 150px;
-    } // Повернення
+    }
+  }
+
+  &__line {
+    width: 536px;
+    height: 1px;
+    border: none;
+    background-color: $main-color;
   }
 }
 
-// Клас, що тригерує стрибок у JS
 .jump {
-  // cubic-bezier робить стрибок фізично правильним (уповільнення вгорі)
   animation: jumpAnimation 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
