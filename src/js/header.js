@@ -12,6 +12,9 @@ const spanText = document.querySelectorAll('span');
 const header = document.querySelector('.header');
 const btnRef = document.querySelectorAll('btn');
 const lineRef = document.querySelector('hr');
+const dinoRef = document.querySelector('#dino')
+const cactusRef = document.querySelector('#cactus')
+const groundRef = document.querySelector('.dino__ground')
 
 toggleRef.addEventListener('click', e => {
   const isDark = document.body.classList.toggle('dark');
@@ -19,12 +22,17 @@ toggleRef.addEventListener('click', e => {
   // toggle animation switch
   e.currentTarget.classList.toggle('active');
 
-  // background
+    // background
   document.body.style.backgroundColor = isDark ? '#444' : '#fff';
   header.style.backgroundColor = isDark ? '#444' : '#fff';
 
   // text colors
   const color = isDark ? '#fff' : '#000';
+  
+  // ВИПРАВЛЕНО: 
+  // Якщо темна тема (isDark) -> білий колір '#fff' (щоб усе було видно на фоні #444)
+  // Якщо світла тема -> оригінальний сірий колір '#535353'
+  const fill = isDark ? '#ffffff' : '#535353'; 
 
   allTextRef.forEach(el => (el.style.color = color));
   if (mainText) mainText.style.color = color;
@@ -37,6 +45,14 @@ toggleRef.addEventListener('click', e => {
     el.style.backgroundColor = isDark ? '#444' : '#fff';
   });
 
+  // dino & cactus тепер чітко видно в обох темах
+  dinoRef.style.fill = fill;
+  cactusRef.style.fill = fill;
+  
+  // ВИПРАВЛЕНО: Зміна кольору лінії через border-top-color, щоб вона не зникала
+  if (lineRef) lineRef.style.borderTopColor = fill;
+
+  
   svgIcon.setAttribute(
     'href',
     isDark ? `${svg}#icon-moon` : `${svg}#icon-sun`

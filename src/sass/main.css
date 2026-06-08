@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   margin: 0;
   list-style: none;
@@ -381,6 +382,7 @@ body {
   border-radius: 20px;
   font-size: 12px;
   padding: 10px 20px;
+  font-weight: 400;
 }
 
 .time5 {
@@ -468,6 +470,16 @@ body {
   background-color: #000;
   margin-top: 36px;
 }
+.dino__ground {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-top: 2px solid #535353; /* Початковий колір для світлої теми */
+  z-index: 1; /* Змініть на 1, щоб лінія була видимою, але під динозавром */
+}
 .dino__title {
   color: #000;
   font-size: 16px;
@@ -482,7 +494,6 @@ body {
   height: 241px;
   margin: auto;
   position: relative;
-  border-bottom: 2px solid #000;
   overflow: hidden;
 }
 .dino__sprite {
@@ -498,7 +509,7 @@ body {
   width: 20px;
   height: 40px;
   position: absolute;
-  top: 160px;
+  top: 165px;
   left: 720px;
   z-index: 2;
 }
