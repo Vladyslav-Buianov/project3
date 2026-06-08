@@ -19,6 +19,18 @@
     }
   }
 
+    
+  &__ground {
+    position: absolute;
+    top: 200px; 
+    left: 0;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 2px solid #535353; /* Початковий колір для світлої теми */
+    z-index: 1; /* Змініть на 1, щоб лінія була видимою, але під динозавром */
+  }
+
   &__title {
     color: $main-color;
     font-size: 16px;
@@ -34,8 +46,7 @@
     height: 241px;
     margin: auto;
     position: relative;
-    border-bottom: 2px solid $main-color; // Земля, якщо немає картинки текстури
-    overflow: hidden; // Щоб кактус не вилазив за межі карти гри
+    overflow: hidden;
   }
 
   &__sprite {
@@ -45,14 +56,16 @@
     top: 150px;
     left: 20px;
     z-index: 2;
+    // fill: #535353;
   }
 
   &__cactus {
+    // fill: #535353;
     display: none;
     width: 20px;
     height: 40px;
     position: absolute;
-    top: 160px; // Опущено нижче відповідно до ніг динозавра
+    top: 165px; // Опущено нижче відповідно до ніг динозавра
     left: 720px;
     z-index: 2;
   }
