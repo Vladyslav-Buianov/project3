@@ -1,16 +1,12 @@
 @use '../base/var' as *;
 
 .time5 {
-  padding: 36px 0;
 
   &__line {
     width: 536px;
     height: 1px;
-    stroke-width: 1px;
     border: none;
     background-color: $main-color;
-    display: flex;
-    justify-content: center;
   }
 
   &__title {

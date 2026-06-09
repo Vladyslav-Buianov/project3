@@ -383,17 +383,11 @@ body {
   padding: 10px 20px;
 }
 
-.time5 {
-  padding: 36px 0;
-}
 .time5__line {
   width: 536px;
   height: 1px;
-  stroke-width: 1px;
   border: none;
   background-color: #000;
-  display: flex;
-  justify-content: center;
 }
 .time5__title {
   color: #000;
@@ -574,18 +568,15 @@ body {
 .ball7__line {
   width: 536px;
   height: 1px;
-  stroke-width: 1px;
   border: none;
   background-color: #000;
-  display: flex;
-  justify-content: center;
 }
 .ball7__title {
   color: #000;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  margin: 36px 0;
+  margin-bottom: 36px;
 }
 .ball7__field {
   width: 720px;
@@ -648,17 +639,15 @@ body {
 .science10__line {
   width: 536px;
   height: 1px;
-  stroke-width: 1px;
   border: none;
   background-color: #000;
-  display: flex;
-  justify-content: center;
 }
 .science10__title {
   color: #000;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
+  margin-top: 36px;
 }
 .science10__list {
   display: grid;

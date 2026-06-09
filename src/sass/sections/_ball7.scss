@@ -6,11 +6,8 @@
   &__line{
     width: 536px;
     height: 1px;
-    stroke-width: 1px;
     border: none;
     background-color: $main-color;
-    display: flex;
-    justify-content: center;
   }
 
   &__title {
@@ -18,7 +15,7 @@
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    margin: 36px 0;
+    margin-bottom: 36px;
   }
   &__field {
     width: 720px;
