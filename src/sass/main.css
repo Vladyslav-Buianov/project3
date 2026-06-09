@@ -1,3 +1,4 @@
+@charset "UTF-8";
 ul {
   margin: 0;
   list-style: none;
@@ -381,6 +382,7 @@ body {
   border-radius: 20px;
   font-size: 12px;
   padding: 10px 20px;
+  font-weight: 400;
 }
 
 .time5__line {
@@ -455,13 +457,6 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-.dino__box::after {
-  content: "";
-  height: 1px;
-  width: 536px;
-  background-color: #000;
-  margin-top: 36px;
-}
 .dino__title {
   color: #000;
   font-size: 16px;
@@ -476,7 +471,6 @@ body {
   height: 241px;
   margin: auto;
   position: relative;
-  border-bottom: 2px solid #000;
   overflow: hidden;
 }
 .dino__sprite {
@@ -486,13 +480,15 @@ body {
   top: 150px;
   left: 20px;
   z-index: 2;
+  fill: #535353;
 }
 .dino__cactus {
+  fill: #535353;
   display: none;
   width: 20px;
   height: 40px;
   position: absolute;
-  top: 160px;
+  top: 165px;
   left: 720px;
   z-index: 2;
 }
@@ -556,6 +552,12 @@ body {
   100% {
     top: 150px;
   }
+}
+.dino__line {
+  width: 536px;
+  height: 1px;
+  border: none;
+  background-color: #000;
 }
 
 .jump {
@@ -631,6 +633,127 @@ body {
 }
 .maxnum__text {
   font-size: 12px;
+}
+
+.team {
+  overflow: hidden;
+  padding: 36px 0;
+}
+.team__box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.team__line {
+  width: 536px;
+  height: 1px;
+  border: none;
+  background-color: #000;
+}
+.team__title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.team__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 250px;
+  scroll-snap-type: x mandatory;
+}
+.team__list::-webkit-scrollbar {
+  display: none;
+}
+.team__list {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.team__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  flex: 0 0 250px;
+  scroll-snap-align: center;
+  box-sizing: border-box;
+}
+.team__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+}
+.team__name {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+}
+.team__text {
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+.team__btnone, .team__btntwo {
+  position: absolute;
+  top: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+  color: #000;
+}
+.team__btnone svg path, .team__btntwo svg path {
+  stroke: currentColor;
+  fill: none;
+}
+.team__btnone:hover, .team__btntwo:hover {
+  transform: scale(1.1);
+}
+.team__btnone {
+  left: 20px;
+}
+.team__btntwo {
+  right: 20px;
+}
+.team__pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 15px;
+}
+.team__pagination .dot {
+  width: 12px;
+  height: 4px;
+  background-color: #ccc;
+  border-radius: 2px;
+  transition: background-color 0.3s ease, width 0.3s ease;
+  cursor: pointer;
+}
+.team__pagination .dot__active {
+  background-color: #000;
+  width: 24px;
 }
 
 .science10 {
@@ -773,6 +896,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
+  z-index: 3;
 }
 
 .modal {
