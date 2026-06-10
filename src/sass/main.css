@@ -335,11 +335,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.calc__line {
-  width: 536px;
-  height: 1px;
-  color: #000;
-}
 .calc__box {
   display: flex;
   gap: 36px;
@@ -363,6 +358,7 @@ body {
   background-color: #000;
   font-size: 12px;
   border-radius: 20px;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .calc__input {
   background-color: #D7D7D7;
@@ -370,6 +366,7 @@ body {
   font-size: 12px;
   padding: 10px 20px;
   text-align: center;
+  box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 .calc__input::-moz-placeholder {
   color: black;
@@ -384,6 +381,10 @@ body {
   padding: 10px 20px;
   font-weight: 400;
 }
+.calc__itemop {
+  width: 25px;
+  height: 25px;
+}
 
 .time5__line {
   width: 536px;
@@ -397,6 +398,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin-bottom: 36px;
+  margin-top: 36px;
 }
 .time5__wrapper {
   display: flex;
