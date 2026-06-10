@@ -14,7 +14,12 @@ const btnRef = document.querySelectorAll('.btn');
 const btnOne = document.querySelectorAll('.team__btnone');
 const btnTwo = document.querySelectorAll('.team__btntwo');
 const lineRef = document.querySelectorAll('hr');
-const allSvgRef = document.querySelectorAll('svg:not(.header__chek svg):not(.header__chekbox svg)');
+const headerSvg = document.querySelectorAll('.header__pic');
+const footerSvg = document.querySelectorAll('.footer__icon');
+const dinoRef = document.querySelector('#dino')
+const cactusRef = document.querySelector('#cactus')
+const groundRef = document.querySelector('.dino__ground')
+
 
 toggleRef.addEventListener('click', e => {
   const isDark = document.body.classList.toggle('dark');
@@ -29,7 +34,13 @@ toggleRef.addEventListener('click', e => {
     const svgColor = isDark ? '#fff' : '#000';
 
   lineRef.forEach(el => (el.style.backgroundColor = lineColor));
-    allSvgRef.forEach(el => {
+
+    headerSvg.forEach(el => {
+    el.style.stroke = svgColor;
+    el.style.fill = isDark ? 'transparent' : 'transparent'; 
+  });
+
+   footerSvg.forEach(el => {
     el.style.stroke = svgColor;
     el.style.fill = isDark ? 'transparent' : 'transparent'; 
   });
@@ -46,6 +57,12 @@ toggleRef.addEventListener('click', e => {
   containerRef.forEach(el => {
     el.style.backgroundColor = isDark ? '#444' : '#fff';
   });
+
+  const fill = isDark ? '#ffffff' : '#535353';
+  dinoRef.style.fill = fill;
+  cactusRef.style.fill = fill;
+
+ groundRef.style.backgroundColor = fill;
 
   svgIcon.setAttribute('href', isDark ? `${svg}#icon-moon` : `${svg}#icon-sun`);
 });
